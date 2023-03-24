@@ -32,7 +32,7 @@ jobs:
     - name: Generar Datos
       run: |
          python 01_generar_datos.py
-         ls -l hearing_test.csv
+         ls -l quakes.csv
     - name: Ingestar Datos
       run: |
          python 02_ingestar.py
