@@ -10,3 +10,4 @@ file_path = 'multipleregression/quakes.csv'
 # Descargar el archivo desde S3
 with open('quakes.csv', 'wb') as f:
     s3.download_fileobj(bucket_name, file_path, f)
+
