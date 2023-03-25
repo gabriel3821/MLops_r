@@ -2,6 +2,11 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
+# Definicion de valores
+target_val = "mag"
+dataset_name = "quakes.csv"
+dataset_name_01 = "train.csv"
+
 # Salvar el dataset
 def save_data(set_name,dataset):
   dataset.to_csv(set_name + ".csv", index=False, columns=['lat','long','depth','stations','mag'])
