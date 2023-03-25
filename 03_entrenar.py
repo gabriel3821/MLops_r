@@ -18,8 +18,8 @@ def data_metrics_2(X_01, y_01, modelo):
 # Separar datos en features y target
 def split_data(dataframe_name):
   df = pd.read_csv(dataframe_name)
-  X_01 = df.drop('mag',axis=1) 
-  y_01 = df['mag']
+  X_01 = df.drop(target_val,axis=1) 
+  y_01 = df[target_val]
   return (X_01,y_01)
 
 # persistir al modelo
