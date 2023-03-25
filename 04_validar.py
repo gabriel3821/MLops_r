@@ -28,9 +28,9 @@ def data_prediction(model, X_01):
 #funcion de validacion
 def test(test_name, filename='mlparams'):
   reg_test = pickle.load(open(filename, 'rb'))
-  (X,y)=split_data(val_name)
+  (X,y)=split_data(test_name)
   y_pred = data_prediction(reg_test, X)
   print('Metricas Validación')
-  data_metrics_2(X, y, reg_validate)
+  data_metrics_2(X, y, reg_test)
 
 test(ds_test)
