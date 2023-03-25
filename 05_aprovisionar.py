@@ -96,4 +96,4 @@ if create_task_definition or create_service :
 #mostrar definciones de tare y servicios en JSON
 #ecs_cliente.describe_task_definition( taskDefinition='tskdummylinear2') 
 
-#ecs_cliente.describe_services(cluster='dummylinear',services=["svcdummylinear"])
+#ecs_cliente.describe_services(cluster='dummylinear',services=["svcdummylinear"]) 
